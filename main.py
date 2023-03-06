@@ -1,7 +1,12 @@
-import data_input
+import cpm.cpm as cpm
 
-read_data = data_input.load_data_from_file()
 
-for data in read_data.items():
-    print(f"{data[0]}\n\t" + "\n\t".join([str(elem) for elem in data[1]]))
-
+brrr_system = cpm.CPM()
+# Input
+brrr_system.load_data_from_file()
+# brrr_system.load_data_from_user()
+# Brrrr
+brrr_system.solve()
+# Output
+brrr_system.print_result_network()
+# brrr_system.show_result_network()
