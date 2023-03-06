@@ -1,4 +1,4 @@
-def load_data_from_file(path: str = "test_data/cpm/simple_test.txt", sep: str=";"):
+def load_data_from_file(path: str = "cpm/test_data/simple_test.txt", sep: str=";"):
     data = dict()
 
     with open(path, "r") as f:

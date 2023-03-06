@@ -1,9 +1,10 @@
 import data_input
-from network import Network
+from cpm.network import Network
 
 
 class CPM:
-    network: Network
+    def __init__(self):
+        self.network: Network = Network()
     def load_data_from_file(self, path: str = "test_data/cpm/simple_test.txt", sep: str = ";"):
         read_data = data_input.load_data_from_file()
 
